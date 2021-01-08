@@ -1,8 +1,8 @@
-name: desktop Lighthouse
+name: Mobile Lighthouse
 on: [push]
 jobs:
   lhci:
-    name: Lighthouse
+    name: Lighthouse Mobile
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
