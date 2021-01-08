@@ -16,7 +16,7 @@ console.log('nameHtml:',nameHtml);
 console.log('nameJson:',nameJson);
 
 
-fs.appendFileSync('./wyniki.csv',  line2Save);
+fs.appendFileSync('./output/wyniki.csv',  line2Save);
 
 fs.copyFile(pathToFileJson, './output/m'+nameJson, (err) => {
   if (err) throw err;
