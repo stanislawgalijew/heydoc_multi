@@ -19,3 +19,13 @@ jobs:
           lhci autorun --collect.url=https://www.heydoc.pl/s/
           ls -R
           node parsing_desktop.js      
+
+
+      - name: Commit files # commit the output folder 
+        run: |
+          git config --local user.email "test@github.com"
+          git config --local user.name "GitHub Action test"
+          git add ./output
+          git commit -m "Add desktop"
+          git pull
+          git push --force
