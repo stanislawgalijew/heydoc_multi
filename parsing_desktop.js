@@ -13,7 +13,7 @@ console.log('pathToFileHTML:',pathToFileHTML);
 var fieldsJson = pathToFileJson.split('/');
 var nameJson = fieldsJson[7];
 var fieldsHTml = pathToFileHTML.split('/');
-var nameHtml = pathToFileHTML[7];
+var nameHtml = fieldsHTml[7];
 console.log('nameHtml:',nameHtml);
 console.log('nameJson:',nameJson);
 
