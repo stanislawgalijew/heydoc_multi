@@ -18,12 +18,12 @@ console.log('nameJson:',nameJson);
 
 fs.appendFileSync('./wyniki.csv',  line2Save);
 
-fs.copyFile(pathToFileJson, './output/'+nameJson, (err) => {
+fs.copyFile(pathToFileJson, './output/d'+nameJson, (err) => {
   if (err) throw err;
   console.log('File was copied to destination');
 });
 
-fs.copyFile(pathToFileHTML, './output/'+nameHtml, (err) => {
+fs.copyFile(pathToFileHTML, './output/d'+nameHtml, (err) => {
   if (err) throw err;
   console.log('File was copied to destination');
 });
