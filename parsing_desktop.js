@@ -7,6 +7,8 @@ const line2Save ='desktop'+","+medianResult.requestedUrl +','+ medianResult.fetc
 console.log('Write to file:',line2Save);
 const pathToFileJson = medianEntry.jsonPath
 const pathToFileHTML = medianEntry.htmlPath
+console.log('pathToFileJson:',pathToFileJson);
+console.log('pathToFileHTML:',pathToFileHTML);
 
 var fieldsJson = pathToFileJson.split('/');
 var nameJson = fieldsJson[7];
@@ -16,7 +18,7 @@ console.log('nameHtml:',nameHtml);
 console.log('nameJson:',nameJson);
 
 
-fs.appendFileSync('./wyniki.csv',  line2Save);
+fs.appendFileSync('./output/wyniki.csv',  line2Save);
 
 fs.copyFile(pathToFileJson, './output/d'+nameJson, (err) => {
   if (err) throw err;
