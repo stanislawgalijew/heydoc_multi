@@ -1,7 +1,5 @@
 name: Mobile Lighthouse
-on: 
-    schedule:
-    - cron:  '0 */3 * * *'
+on: pull_request
 jobs:
   lhci:
     name: Lighthouse Mobile
