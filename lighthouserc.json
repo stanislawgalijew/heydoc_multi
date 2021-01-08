@@ -1,0 +1,20 @@
+{
+	"ci": {
+		"collect": {
+			"numberOfRuns": 3,
+			"settings": {
+				"throttlingMethod": "simulate",
+				"emulatedFormFactor": "desktop",
+				"throttling": {
+					"rttMs": 40,
+					"throughputKbps": 10240,
+					"cpuSlowdownMultiplier": 1
+				}
+			},
+			"upload": {
+				"target": "filesystem",
+				"outputDir": "./outputDir"
+			}
+		}
+	}
+}
