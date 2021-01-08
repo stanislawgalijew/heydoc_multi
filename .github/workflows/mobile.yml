@@ -13,13 +13,34 @@ jobs:
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.6.x
-          lhci autorun --collect.url=https://www.heydoc.pl/s/article/E-recepta-co-warto-o-niej-wiedziec-Jak-otrzymac-recepte-online --config=./lighthouserc_mobile.json
-          node parsing_mobile.js
           
-          lhci autorun --collect.url=https://www.heydoc.pl/s/ --config=./lighthouserc_mobile.json
+          #PROD
+          lhci autorun --collect.url=https://www.heydoc.pl/s/article/E-recepta-co-warto-o-niej-wiedziec-Jak-otrzymac-recepte-online 
+          ls -R
           node parsing_mobile.js      
           
+          lhci autorun --collect.url=https://www.heydoc.pl/s/
           ls -R
+          node parsing_mobile.js      
+          
+          #UAT
+          lhci autorun --collect.url=https://uatpartial-healthcloudtrialmaster-15a4d-16dc9b5b004.cs108.force.com/pp/s/article/Co-to-jest-synapsa
+          ls -R
+          node parsing_mobile.js      
+          
+          lhci autorun --collect.url=https://uatpartial-healthcloudtrialmaster-15a4d-16dc9b5b004.cs108.force.com/pp/s/
+          ls -R
+          node parsing_mobile.js      
+          
+          #TEST
+          lhci autorun --collect.url=https://pptest-healthcloudtrialmaster-15a4d-16dc9b5b004.cs101.force.com/pp/s/article/test-s
+          ls -R
+          node parsing_mobile.js      
+          
+          lhci autorun --collect.url=https://pptest-healthcloudtrialmaster-15a4d-16dc9b5b004.cs101.force.com/pp/s/
+          ls -R
+          node parsing_mobile.js      
+          
 
       - name: Commit files # commit the output folder 
         run: |
