@@ -1,5 +1,7 @@
 name: desktop Lighthouse
-on: [push]
+on: 
+  schedule:
+    - cron:  '0 */3 * * *'
 jobs:
   lhci:
     name: Lighthouse
