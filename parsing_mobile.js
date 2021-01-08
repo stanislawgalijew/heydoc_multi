@@ -3,7 +3,7 @@ const lhciManifest = require('./outputDir/manifest.json');
 const medianEntry = lhciManifest.find(entry => entry.isRepresentativeRun)
 const medianResult = JSON.parse(fs.readFileSync(medianEntry.jsonPath, 'utf-8'));
 console.log('Median performance score was', medianResult.categories.performance.score * 100);
-const line2Save ='desktop'+","+medianResult.requestedUrl +','+ medianResult.fetchTime +','+ medianResult.categories.performance.score+','+ medianResult.categories.seo.score+','+ medianResult.categories.accessibility.score+'\n'
+const line2Save ='mobile'+","+medianResult.requestedUrl +','+ medianResult.fetchTime +','+ medianResult.categories.performance.score+','+ medianResult.categories.seo.score+','+ medianResult.categories.accessibility.score+'\n'
 console.log('Write to file:',line2Save);
 const pathToFileJson = medianEntry.jsonPath
 const pathToFileHTML = medianEntry.htmlPath
@@ -18,12 +18,12 @@ console.log('nameJson:',nameJson);
 
 fs.appendFileSync('./wyniki.csv',  line2Save);
 
-fs.copyFile(pathToFileJson, './output/d'+nameJson, (err) => {
+fs.copyFile(pathToFileJson, './output/m'+nameJson, (err) => {
   if (err) throw err;
   console.log('File was copied to destination');
 });
 
-fs.copyFile(pathToFileHTML, './output/d'+nameHtml, (err) => {
+fs.copyFile(pathToFileHTML, './output/m'+nameHtml, (err) => {
   if (err) throw err;
   console.log('File was copied to destination');
 });
