@@ -13,7 +13,7 @@ jobs:
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.6.x
-          hci autorun --collect.url=https://www.heydoc.pl/s/article/E-recepta-co-warto-o-niej-wiedziec-Jak-otrzymac-recepte-online --config=./lighthouserc_mobile.json
+          lhci autorun --collect.url=https://www.heydoc.pl/s/article/E-recepta-co-warto-o-niej-wiedziec-Jak-otrzymac-recepte-online --config=./lighthouserc_mobile.json
           ls -R
           node parsing_mobile.js  
           
