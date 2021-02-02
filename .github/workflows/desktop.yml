@@ -29,7 +29,7 @@ jobs:
           lhci autorun --collect.url=https://uatpartial-healthcloudtrialmaster-15a4d-16dc9b5b004.cs108.force.com/pp/s/
           node parsing_desktop.js
 
-          #TEST
+          #TESTT
           #lhci autorun --collect.url=https://pptest-healthcloudtrialmaster-15a4d-16dc9b5b004.cs101.force.com/pp/s/article/test-s
           #node parsing_desktop.js
           
