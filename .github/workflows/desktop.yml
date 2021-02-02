@@ -1,7 +1,7 @@
 name: desktop Lighthouse
 on: 
   schedule:
-    - cron:  '0 */2 * * *'
+    - cron:  '0 */1 * * *'
 jobs:
   lhci:
     name: Lighthouse
@@ -23,11 +23,11 @@ jobs:
           node parsing_desktop.js
           
           #UAT
-          #lhci autorun --collect.url=https://uatpartial-healthcloudtrialmaster-15a4d-16dc9b5b004.cs108.force.com/pp/s/article/Co-to-jest-synapsa
-          #node parsing_desktop.js
+          lhci autorun --collect.url=https://uatpartial-healthcloudtrialmaster-15a4d-16dc9b5b004.cs108.force.com/pp/s/article/Co-to-jest-synapsa
+          node parsing_desktop.js
           
-          #lhci autorun --collect.url=https://uatpartial-healthcloudtrialmaster-15a4d-16dc9b5b004.cs108.force.com/pp/s/
-          #node parsing_desktop.js
+          lhci autorun --collect.url=https://uatpartial-healthcloudtrialmaster-15a4d-16dc9b5b004.cs108.force.com/pp/s/
+          node parsing_desktop.js
 
           #TEST
           #lhci autorun --collect.url=https://pptest-healthcloudtrialmaster-15a4d-16dc9b5b004.cs101.force.com/pp/s/article/test-s
@@ -46,11 +46,11 @@ jobs:
           node parsing_mobile.js      
           
           #UAT
-          #lhci autorun --collect.url=https://uatpartial-healthcloudtrialmaster-15a4d-16dc9b5b004.cs108.force.com/pp/s/article/Co-to-jest-synapsa --config=./lighthouserc_mobile.json
-          #node parsing_mobile.js      
+          lhci autorun --collect.url=https://uatpartial-healthcloudtrialmaster-15a4d-16dc9b5b004.cs108.force.com/pp/s/article/Co-to-jest-synapsa --config=./lighthouserc_mobile.json
+          node parsing_mobile.js      
           
-          #lhci autorun --collect.url=https://uatpartial-healthcloudtrialmaster-15a4d-16dc9b5b004.cs108.force.com/pp/s/ --config=./lighthouserc_mobile.json
-          #node parsing_mobile.js      
+          lhci autorun --collect.url=https://uatpartial-healthcloudtrialmaster-15a4d-16dc9b5b004.cs108.force.com/pp/s/ --config=./lighthouserc_mobile.json
+          node parsing_mobile.js      
           
           #TEST
           #lhci autorun --collect.url=https://pptest-healthcloudtrialmaster-15a4d-16dc9b5b004.cs101.force.com/pp/s/article/test-s --config=./lighthouserc_mobile.json
