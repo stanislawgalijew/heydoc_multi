@@ -8,7 +8,7 @@
                 "throttling": {
                     "rttMs":150,
                     "throughputKbps":1638,
-                    "cpuSlowdownMultiplier":4
+                    "cpuSlowdownMultiplier":3
                 }
             }
         },
