@@ -1,6 +1,6 @@
 name: desktop Lighthouse
 on: push
-  #schedule:
+  ##schedule:
    # - cron:  '0 */1 * * *'
 jobs:
   lhci:
