@@ -50,8 +50,8 @@ jobs:
           node parsing_mobile.js  
           
           #Newartykul
-          lhci autorun --collect.url=https://uatpartial-healthcloudtrialmaster-15a4d-16dc9b5b004.cs108.force.com/authLWR/s/empty --config=./lighthouserc_mobile.json
-          node parsing_mobile.js      
+          #lhci autorun --collect.url=https://uatpartial-healthcloudtrialmaster-15a4d-16dc9b5b004.cs108.force.com/authLWR/s/empty --config=./lighthouserc_mobile.json
+          #node parsing_mobile.js      
 
           #OLDempty
           #lhci autorun --collect.url=https://uatpartial-healthcloudtrialmaster-15a4d-16dc9b5b004.cs108.force.com/pp/s/empty --config=./lighthouserc_mobile.json
