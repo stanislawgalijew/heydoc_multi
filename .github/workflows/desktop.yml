@@ -45,12 +45,12 @@ jobs:
           lhci autorun --collect.url=https://www.heydoc.pl/s/ --config=./lighthouserc_mobile.json
           node parsing_mobile.js      
           
-          lhci autorun --collect.url=https://www.heydoc.pl/s/article/Bol-glowy-z-lewej-strony-co-oznacza-bol-lewej-skroni-i-bol-lewego-oka --config=./lighthouserc_mobile.json
-          node parsing_mobile.js     
+          #lhci autorun --collect.url=https://www.heydoc.pl/s/article/Bol-glowy-z-lewej-strony-co-oznacza-bol-lewej-skroni-i-bol-lewego-oka --config=./lighthouserc_mobile.json
+          #node parsing_mobile.js     
           
           #PROD Competition
-          lhci autorun --collect.url=https://www.medonet.pl/zdrowie,twoja-skora-ma-dosyc-zimna--mamy-na-to-recepte,artykul,16273489.html --config=./lighthouserc_mobile.json
-          node parsing_mobile.js     
+          #lhci autorun --collect.url=https://www.medonet.pl/zdrowie,twoja-skora-ma-dosyc-zimna--mamy-na-to-recepte,artykul,16273489.html --config=./lighthouserc_mobile.json
+          #node parsing_mobile.js     
 
           
           #UAToldartykul
